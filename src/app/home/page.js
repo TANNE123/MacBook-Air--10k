@@ -3,13 +3,15 @@
 import Navbar from "../Components/Navbar/page";
 import Image from "next/image";
 import { FaCoins, FaStar, FaRocket, FaBriefcase } from "react-icons/fa";
-import ButtonCompoent from "../Components/Button/page";
 import LayerTwoPage from "../Components/LayerTwo/page";
 import LayerThreedPage from "../Components/LayerThreed/page";
 import LayerFourthPage from "../Components/LayerFourth/page";
 import HiringProcess from "../Components/LayerFiveth/page";
 import TechnologiesWeCover from "../Components/Layersixth/page";
 import Alumni from "../Components/LayerSeven/page";
+import Graduates from "../Components/LayerGraduates/page";
+import ButtonCompoent from "../Components/Button/page";
+import StudentCard from "../Components/SuccessStories/page";
 
 const HomeComponent = () => {
   return (
@@ -68,7 +70,7 @@ const HomeComponent = () => {
               priority
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[rgba(0,0,0,0.6)] px-4 py-6 rounded-lg text-center w-[90%] sm:w-[80%] md:w-[70%] lg:w-[80%]">
-              <h2 className="text-sm sm:text-xl md:text-2xl font-bold text-pink-400">
+              <h2 className="text-sm sm:text-xl md:text-2xl font-bold gradient-text">
                 Build Your Dream Tech Team Fast, Free & Fearless
               </h2>
               <p className="mt-2 text-sm sm:text-base font-medium text-white">
@@ -86,6 +88,15 @@ const HomeComponent = () => {
       <HiringProcess/>
       <TechnologiesWeCover/>
       <Alumni/>
+      <Graduates/>
+      <div className="min-h-screen bg-gradient-to-tr from-orange-100 to-orange-300 py-8 px-4 sm:px-8 md:px-12 lg:px-20">
+  <div className="flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6">
+    {Array.from({ length: 8 }).map((_, i) => (
+      <StudentCard key={i} />
+    ))}
+  </div>
+</div>
+
     </div>
   )
 }

@@ -1,37 +1,38 @@
 "use client";
 import Image from "next/image";
+import ButtonCompoent from "../Button/page";
 
 // Sample data
 const alumni = [
     {
         name: "Abhiram Kaleru",
-        img: "/your-path/abhiram.png",
-        company: "/your-path/company1.png",
+        img: "/layerTwo/Abhiram Kaleru.svg",
+        company: "/layerTwo/image 111.svg",
     },
     {
         name: "Pidugu Ramya",
-        img: "/your-path/ramya.png",
-        company: "/your-path/company2.png",
+        img: "/layerTwo/Pidugu Ramya.svg",
+        company: "/layerTwo/image 112.svg",
     },
     {
         name: "Naveen Reddy",
-        img: "/your-path/naveen.png",
-        company: "/your-path/company3.png",
+        img: "/layerTwo/Naveen Reddy.svg",
+        company: "/layerTwo/image 113.svg",
     },
     {
         name: "A. Akhila",
-        img: "/your-path/akhila.png",
-        company: "/your-path/company4.png",
+        img: "/layerTwo/A.Akhila.svg",
+        company: "/layerTwo/image 114.svg",
     },
     {
         name: "Praveen Kothagolla",
-        img: "/your-path/praveen.png",
-        company: "/your-path/company5.png",
+        img: "/layerTwo/Praveen Kothagolla.svg",
+        company: "/layerTwo/image 115.svg",
     },
     {
         name: "Pravallika Narla",
-        img: "/your-path/pravallika.png",
-        company: "/your-path/company6.png",
+        img: "/layerTwo/Pravallika Narla.svg",
+        company: "/layerTwo/image 116.svg",
     },
 ];
 
@@ -69,7 +70,7 @@ const Alumni = () => {
                                     height={112}
                                     className="object-cover w-full h-full border-4 border-white rounded-full shadow-md"
                                 />
-                                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 text-[20px] sm:text-sm font-semibold text-white bg-[#f44f5a] rounded-full px-2 sm:px-4 py-1 shadow w-full whitespace-nowrap overflow-hidden text-ellipsis text-center">
+                                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 text-[10px] sm:text-sm font-semibold gradient-backeground-color px-2 sm:px-4 py-1 shadow w-full whitespace-nowrap overflow-hidden text-ellipsis text-center">
                                     {person.name}
                                 </div>
                             </div>
@@ -78,7 +79,7 @@ const Alumni = () => {
                                 <Image
                                     src={person.company}
                                     alt="Company Logo"
-                                    width={80}
+                                    width={40}
                                     height={24}
                                     className="object-contain mx-auto"
                                 />
@@ -89,9 +90,7 @@ const Alumni = () => {
             </div>
 
             <div className="flex justify-center mt-10 relative z-10">
-                <button className="border border-[#f44f5a] text-[#f44f5a] text-sm px-6 py-2 rounded-full hover:bg-[#f44f5a] hover:text-white transition duration-300">
-                    View All
-                </button>
+                <ButtonCompoent style="text-sm px-6 py-2 gradient-border" text=" View All" />
             </div>
         </div>
     );
