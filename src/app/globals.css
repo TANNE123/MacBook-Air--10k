@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff8541, #e84975);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.gradient-backeground-color {
+  background: linear-gradient(90deg, #ff8541, #e84975);
+  color: white;
+  border-radius: 3rem;
+}
+
+
+.gradient-border {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  overflow: hidden;
+  background: linear-gradient(90deg, #ff8541, #e84975);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1.5px;
+  background: linear-gradient(90deg, #ff8541, #e84975);
+  border-radius: 3rem;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.step {
+  position: relative;
+  padding-left: 30px;
+  color: #f97316; /* Orange color from the image */
+  font-weight: 600;
+}
+
+.step::before {
+  content: attr(data-step);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #f97316; /* Orange circle */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.step + .step::before {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: -20px;
+  height: 100%;
+  width: 2px;
+  background-color: #f97316; /* Orange line connecting steps */
+}
