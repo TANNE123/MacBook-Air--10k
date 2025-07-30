@@ -12,6 +12,10 @@ import Alumni from "../Components/LayerSeven/page";
 import Graduates from "../Components/LayerGraduates/page";
 import ButtonCompoent from "../Components/Button/page";
 import StudentCard from "../Components/SuccessStories/page";
+import LeadingTech from "../Components/LeadingTech/page";
+import SuccessStories from "../Components/LearnAboutStories/page";
+import Footer from "../Components/Footer/page";
+import LayerFaq from "../Components/FaqLayer/page";
 
 const HomeComponent = () => {
   return (
@@ -82,21 +86,29 @@ const HomeComponent = () => {
           </div>
         </div>
       </section>
-      <LayerTwoPage/>
-      <LayerThreedPage/>
-      <LayerFourthPage/>
-      <HiringProcess/>
-      <TechnologiesWeCover/>
-      <Alumni/>
-      <Graduates/>
-      <div className="min-h-screen bg-gradient-to-tr from-orange-100 to-orange-300 py-8 px-4 sm:px-8 md:px-12 lg:px-20">
-  <div className="flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6">
-    {Array.from({ length: 8 }).map((_, i) => (
-      <StudentCard key={i} />
-    ))}
-  </div>
-</div>
+      <LayerTwoPage />
+      <LayerThreedPage />
+      <LayerFourthPage />
+      <HiringProcess />
+      <TechnologiesWeCover />
+      <Alumni />
+      <Graduates />
+      <div className="min-h-screen  py-8 px-4 sm:px-8 md:px-12 lg:px-20 bg-color">
+        <div className="max-w-screen-xl mx-auto text-center mb-8">
+          <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold text-white">Success Stories</h1>
+          <p className="text-white mt-2 text-lg">Real hiring wins from our partner companies</p>
+        </div>
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6">
+          {Array.from({ length: 8 }).map((_, i) => (
+            <StudentCard key={i} />
+          ))}
+        </div>
+      </div>
 
+      <LeadingTech />
+      <SuccessStories />
+      <LayerFaq />
+      <Footer />
     </div>
   )
 }
