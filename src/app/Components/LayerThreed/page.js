@@ -60,13 +60,15 @@ const LayerThreedPage = () => {
     useEffect(() => {
         const marquee = marqueeRef1.current;
         let scrollAmount = 0;
+        // console.log(marquee,'marqueee');
 
         const scroll = () => {
             if (marquee) {
                 scrollAmount -= 1;
                 marquee.style.transform = `translateX(${scrollAmount}px)`;
-
+                // console.log(marquee,'marqueemarquee')
                 const resetPoint = marquee.scrollWidth / 3;
+                // console.log(resetPoint,'resetPoint')
                 if (Math.abs(scrollAmount) >= resetPoint) {
                     scrollAmount = 0;
                 }

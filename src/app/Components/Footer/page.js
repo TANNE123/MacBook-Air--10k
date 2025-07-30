@@ -22,7 +22,7 @@ const Footer = () => {
                 alt="10000 Coders Logo"
                 width={100}
                 height={100}
-                className="w-30 h-30 mr-2"  
+                className="w-30 h-20 mr-2"  
                 />
             </div>
             <p className="text-sm">Right path for a Bright Career.</p>
@@ -96,13 +96,13 @@ const Footer = () => {
           <div className="flex-shrink-0 text-center sm:text-left">
             <div className="flex justify-center sm:justify-start items-start">
               <FaMapMarkerAlt className="w-5 h-5 mr-2 mt-1" />
-              <div>
-                <p className="text-sm">Metro Station, MIG 214,</p>
-                <p className="text-sm">Road 1, Behind KPHB,</p>
-                <p className="text-sm">Kukatpally Housing Board Colony,</p>
-                <p className="text-sm">Kukatpally, Hyderabad,</p>
-                <p className="text-sm">Telangana</p>
-                <p className="text-sm">500072</p>
+              <div className="w-fit">
+                <p className="text-sm w-fit">Metro Station, MIG 214,</p>
+                <p className="text-sm w-fit">Road 1, Behind KPHB,</p>
+                <p className="text-sm w-fit">Housing Board Colony,</p>
+                <p className="text-sm w-fit">Kukatpally, Hyderabad,</p>
+                <p className="text-sm w-fit">Telangana</p>
+                <p className="text-sm w-fit">500072</p>
               </div>
             </div>
           </div>

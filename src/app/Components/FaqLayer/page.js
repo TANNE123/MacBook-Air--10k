@@ -19,7 +19,7 @@ const LayerFaq = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center px-4">
+    <div className="h-fit bg-white flex items-center justify-center px-4 py-10">
       <div className="w-full max-w-2xl">
         <h2 className="text-center text-3xl font-semibold mb-8 gradient-text">FAQ</h2>
 

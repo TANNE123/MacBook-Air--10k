@@ -45,20 +45,20 @@ const HomeComponent = () => {
               <ButtonCompoent style="font-semibold py-2 px-4 rounded-full gradient-backeground-color" text="Get Curated Profiles" />
               <ButtonCompoent style="font-semibold py-2 px-4 gradient-border" text="Book a Hiring Consultation" />
             </div>
-            <div className="grid grid-cols-2 gap-4 pt-4 text-sm justify-center lg:justify-start">
-              <div className="flex items-center justify-center gap-2 bg-gray-100 rounded-full py-2 px-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 pt-4 text-sm justify-center lg:justify-start">
+              <div className="flex items-center justify-center gap-2 bg-gray-100 rounded-full py-3 px-3">
                 <FaCoins className="text-yellow-500" />
                 Zero Hiring Fee
               </div>
-              <div className="flex items-center justify-center gap-2 bg-gray-100 rounded-full py-2 px-3">
+              <div className="flex items-center justify-center gap-2 bg-gray-100 rounded-full py-3 px-3">
                 <FaStar className="text-yellow-500" />
                 Top 1% Trained
               </div>
-              <div className="flex items-center justify-center gap-2 bg-gray-100 rounded-full py-2 px-3">
+              <div className="flex items-center justify-center gap-2 bg-gray-100 rounded-full py-3 px-3">
                 <FaRocket className="text-pink-500" />
                 3-5 Days to Hire
               </div>
-              <div className="flex items-center justify-center gap-2 py-2 px-3 gradient-backeground-color">
+              <div className="flex items-center justify-center gap-2 py-3 px-3 gradient-backeground-color">
                 <FaBriefcase />
                 Hire From Us
               </div>

@@ -4,32 +4,32 @@ import ButtonCompoent from '../Button/page';
 const LayerFourthPage = () => {
     const cardData = [
         {
-            icon: <FaGraduationCap className="text-4xl text-white" />,
+            icon: <FaGraduationCap className="text-4xl" />,
             title: "Skill-Matched Talent",
             description: "Every developer is vetted with live project experience and technical assessments matching your exact requirements."
         },
         {
-            icon: <FaBolt className="text-4xl text-white" />,
+            icon: <FaBolt className="text-4xl" />,
             title: "Fast Turnaround",
             description: "Receive curated profiles within 24-48 hours of sharing your job requirements. No lengthy hiring processes."
         },
         {
-            icon: <FaBriefcase className="text-4xl text-white" />,
+            icon: <FaBriefcase className="text-4xl" />,
             title: "Soft Skills Ready",
             description: "Our developers are trained in communication, resume writing, and client handling for professional workplace integration."
         },
         {
-            icon: <FaUser className="text-4xl text-white" />,
+            icon: <FaUser className="text-4xl" />,
             title: "Custom Hiring",
             description: "Roles are precisely matched to your job description and company culture requirements."
         },
         {
-            icon: <FaLaptopCode className="text-4xl text-white" />,
+            icon: <FaLaptopCode className="text-4xl" />,
             title: "Trained on Your Stack",
             description: "React, Node.js, MongoDB, Python, and all major technologies with hands-on project experience."
         },
         {
-            icon: <FaCheckCircle className="text-4xl text-white" />,
+            icon: <FaCheckCircle className="text-4xl" />,
             title: "Quality Guarantee",
             description: "If it doesn’t work out, we provide replacement candidates at no additional cost."
         }
@@ -51,7 +51,7 @@ const LayerFourthPage = () => {
                             key={index}
                             className={`p-6 rounded-lg shadow-lg border-1 border-white`}
                         >
-                            <div className="flex justify-center mb-4 gradient-text">
+                            <div className="flex justify-center mb-4 text-[#e84975]">
                                 {card.icon}
                             </div>
                             <h3 className="text-xl font-semibold text-white mb-2">{card.title}</h3>
