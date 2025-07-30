@@ -44,7 +44,7 @@
 .step {
   position: relative;
   padding-left: 30px;
-  color: #f97316; /* Orange color from the image */
+  color: #f97316; 
   font-weight: 600;
 }
 
@@ -56,7 +56,7 @@
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background-color: #f97316; /* Orange circle */
+  background-color: #f97316;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -72,7 +72,7 @@
   top: -20px;
   height: 100%;
   width: 2px;
-  background-color: #f97316; /* Orange line connecting steps */
+  background-color: #f97316;
 }
 
 .scrollbar-hide {

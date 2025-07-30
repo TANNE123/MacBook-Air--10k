@@ -15,7 +15,6 @@ const SuccessStories = () => {
       />
 
       <div className="flex flex-col md:flex-col sm:flex-col lg:flex-row 2xl:flex-row items-center justify-between gap-10 lg:gap-0 min-w-0">
-        {/* Left Image */}
         <div className="w-full lg:w-[400px] flex-shrink-0">
           <div className="w-[300px] lg:w-[400px] self-center">
             <Image
@@ -28,7 +27,6 @@ const SuccessStories = () => {
           </div>
         </div>
 
-        {/* Center Content */}
         <div className="text-center lg:text-left flex-1 min-w-0 px-4 sm:px-8 lg:px-0">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug text-center">
             Learn more about the success stories of our professionals
@@ -48,7 +46,6 @@ const SuccessStories = () => {
           </div>
         </div>
 
-        {/* Right Image */}
         <div className="w-full lg:w-[400px] flex-shrink-0 flex justify-end">
           <div className="w-[300px] lg:w-[400px] self-center">
             <Image
@@ -61,7 +58,6 @@ const SuccessStories = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

@@ -59,7 +59,7 @@ const LayerFourthPage = () => {
                         </div>
                     ))}
                 </div>
-              
+
 
                 <ButtonCompoent style={"mt-8 px-8 py-3  font-semibold transition duration-300 gradient-backeground-color text-lg"} text={" Start Hiring"} />
             </div>

@@ -11,28 +11,28 @@ const steps = [
     title: "Share Requirements",
     description: "Tell us about your project needs, tech stack, and team culture",
     icon: <FaRegClipboard className="text-2xl text-blue-600" />,
-    imgPath:"/Frame.svg"
+    imgPath: "/Frame.svg"
   },
   {
     number: 2,
     title: "Receive Curated Profiles",
     description: "Get hand-picked candidate profiles within 24–48 hours",
     icon: <FaUsers className="text-2xl text-blue-600" />,
-      imgPath:"/Group.svg"
+    imgPath: "/Group.svg"
   },
   {
     number: 3,
     title: "Interview & Pick",
     description: "Conduct interviews and select your ideal candidate",
     icon: <FaUserCheck className="text-2xl text-blue-600" />,
-      imgPath:"/Group (1).svg"
+    imgPath: "/Group (1).svg"
   },
   {
     number: 4,
     title: "Onboard in <5 Days",
     description: "Complete the hiring process and onboard your new team member",
     icon: <FaRocket className="text-2xl text-blue-600" />,
-      imgPath:"/Group (2).svg"
+    imgPath: "/Group (2).svg"
   },
 ];
 
@@ -63,12 +63,12 @@ const HiringProcess = () => {
                     {step.title}
                   </h3>
                   {/* <p>{step.icon}</p> */}
-                  <Image 
-                  src={step.imgPath}
-                  alt={step.title}
-                  width={50}
-                  height={50}
-                  className="w-8 h-8 object-contain"
+                  <Image
+                    src={step.imgPath}
+                    alt={step.title}
+                    width={50}
+                    height={50}
+                    className="w-8 h-8 object-contain"
                   />
                 </div>
                 <p className="text-sm text-gray-600 mt-1">{step.description}</p>

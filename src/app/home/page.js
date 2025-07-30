@@ -31,6 +31,7 @@ const HomeComponent = () => {
         />
         <div className="max-w-screen-xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
           <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
+
             <h1 className="text-4xl sm:text-4xl font-bold gradient-text leading-tight">
               Hire Industry-Ready  <br />
               <span>Developers.Zero </span><br />
