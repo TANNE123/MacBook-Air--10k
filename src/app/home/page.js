@@ -16,8 +16,17 @@ import LeadingTech from "../Components/LeadingTech/page";
 import SuccessStories from "../Components/LearnAboutStories/page";
 import Footer from "../Components/Footer/page";
 import LayerFaq from "../Components/FaqLayer/page";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const HomeComponent = () => {
+    useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
   return (
     <div>
       <Navbar />
@@ -28,17 +37,18 @@ const HomeComponent = () => {
           layout="fill"
           className="absolute inset-0 object-cover opacity-20"
           priority
+          
         />
         <div className="max-w-screen-xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
           <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
 
-            <h1 className="text-4xl sm:text-4xl font-bold gradient-text leading-tight">
+            <h1 className="text-4xl sm:text-4xl font-bold gradient-text leading-tight" data-aos="fade-right">
               Hire Industry-Ready  <br />
               <span>Developers.Zero </span><br />
               <span>Hiring Fee. 100%</span><br />
               <span> Skill-Tested</span>
             </h1>
-            <p className="text-gray-700 text-base sm:text-lg">
+            <p className="text-gray-700 text-base sm:text-lg" data-aos="fade-right">
               Tech talent trained with real-world projects, communication,
               and problem-solving.
             </p>
@@ -47,25 +57,25 @@ const HomeComponent = () => {
               <ButtonCompoent style="font-semibold py-2 px-4 gradient-border" text="Book a Hiring Consultation" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 pt-4 text-sm justify-center lg:justify-start">
-              <div className="flex items-center justify-center gap-2 bg-gray-100 rounded-full py-3 px-3">
+              <div className="flex items-center justify-center gap-2 bg-gray-100 rounded-full py-3 px-3" data-aos="zoom-in">
                 <FaCoins className="text-yellow-500" />
                 Zero Hiring Fee
               </div>
-              <div className="flex items-center justify-center gap-2 bg-gray-100 rounded-full py-3 px-3">
+              <div className="flex items-center justify-center gap-2 bg-gray-100 rounded-full py-3 px-3" data-aos="zoom-in">
                 <FaStar className="text-yellow-500" />
                 Top 1% Trained
               </div>
-              <div className="flex items-center justify-center gap-2 bg-gray-100 rounded-full py-3 px-3">
+              <div className="flex items-center justify-center gap-2 bg-gray-100 rounded-full py-3 px-3" data-aos="zoom-in">
                 <FaRocket className="text-pink-500" />
                 3-5 Days to Hire
               </div>
-              <div className="flex items-center justify-center gap-2 py-3 px-3 gradient-backeground-color">
+              <div className="flex items-center justify-center gap-2 py-3 px-3 gradient-backeground-color" data-aos="zoom-in">
                 <FaBriefcase />
                 Hire From Us
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 relative rounded-md overflow-hidden shadow-lg">
+          <div className="w-full lg:w-1/2 relative rounded-md overflow-hidden shadow-lg" data-aos="zoom-in-down">
             <Image
               src="/Herobanner.svg"
               alt="Tech Team Hiring"
@@ -73,8 +83,9 @@ const HomeComponent = () => {
               height={300}
               className="w-full h-auto"
               priority
+              
             />
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[rgba(0,0,0,0.6)] px-4 py-6 rounded-lg text-center w-[90%] sm:w-[80%] md:w-[70%] lg:w-[80%]">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[rgba(0,0,0,0.6)] px-4 py-6 rounded-lg text-center w-[90%] sm:w-[80%] md:w-[70%] lg:w-[80%]" data-aos="zoom-in">
               <h2 className="text-sm sm:text-xl md:text-2xl font-bold gradient-text">
                 Build Your Dream Tech Team Fast, Free & Fearless
               </h2>

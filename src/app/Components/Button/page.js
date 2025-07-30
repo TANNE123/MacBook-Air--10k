@@ -2,7 +2,7 @@
 
 const ButtonCompoent= ({style,text,icon})=>{
     return(
-        <button className={style}>{icon}{text}</button>
+        <button className={style} data-aos="zoom-in">{icon}{text}</button>
     )
 }
 

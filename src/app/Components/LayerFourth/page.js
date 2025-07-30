@@ -50,6 +50,7 @@ const LayerFourthPage = () => {
                         <div
                             key={index}
                             className={`p-6 rounded-lg shadow-lg border-1 border-white`}
+                            data-aos="flip-left"
                         >
                             <div className="flex justify-center mb-4 text-[#e84975]">
                                 {card.icon}

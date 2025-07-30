@@ -61,6 +61,7 @@ const Alumni = () => {
                         <div
                             key={index}
                             className="flex flex-col items-center text-center"
+                            data-aos="zoom-in-down"
                         >
                             <div className="relative w-24 h-24 sm:w-28 sm:h-28 mb-6">
                                 <Image

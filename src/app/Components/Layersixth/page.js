@@ -54,6 +54,8 @@ const TechnologiesWeCover = () => {
                         <div
                             key={tech.name}
                             className="w-[120px] sm:w-[130px] lg:w-[160px] flex flex-col items-center bg-white rounded-xl py-4 shadow-md hover:shadow-lg transition"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
                         >
                             <div className="relative w-14 h-14 sm:w-16 sm:h-25 mb-3">
                                 <Image

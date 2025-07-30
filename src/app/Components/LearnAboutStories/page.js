@@ -23,6 +23,7 @@ const SuccessStories = () => {
               width={400}
               height={400}
               className="w-full h-auto object-contain"
+              data-aos="zoom-in"
             />
           </div>
         </div>
@@ -54,6 +55,7 @@ const SuccessStories = () => {
               width={400}
               height={400}
               className="w-full h-auto object-contain"
+              data-aos="zoom-in"
             />
           </div>
         </div>

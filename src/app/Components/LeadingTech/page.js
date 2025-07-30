@@ -105,7 +105,7 @@ const LeadingTech = () => {
                     width={1200}
                     className="w-full h-full absolute inset-0 object-cover opacity-50"
                 />
-                <p className="absolute inset-0 flex justify-center items-center text-center z-50 text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 px-4 sm:px-6 md:px-8 lg:px-12 max-w-[90%] sm:max-w-[80%] md:max-w-[700px] mx-auto">
+                <p className="absolute inset-0 flex justify-center items-center text-center z-1 text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 px-4 sm:px-6 md:px-8 lg:px-12 max-w-[90%] sm:max-w-[80%] md:max-w-[700px] mx-auto">
                     We build top-tier tech talent - and the industry knows it, hires it, and trusts it.
                 </p>
             </div>

@@ -36,6 +36,7 @@ const  LayerTwoPage=()=> {
             <div
               key={idx}
               className="bg-white rounded-xl shadow-md flex flex-col items-center justify-center gap-2 p-6"
+              data-aos="zoom-in-right"
             >
               <div className="text-xl font-bold gradient-text">{stat.label}</div>
               <div className="text-sm text-center text-gray-600 border-b-2 pb-1 border-dotted border-[#ff8541]">{stat.sub}</div>
@@ -48,6 +49,7 @@ const  LayerTwoPage=()=> {
             <div
               key={idx}
               className="bg-white text-black rounded-xl shadow-md flex flex-col items-center justify-center gap-2 p-6"
+              data-aos="zoom-in-left"
             >
               <div className="text-xl font-bold gradient-text">{stat.label}</div>
               <div className="text-sm text-center text-gray-600">{stat.sub}</div>

@@ -63,6 +63,8 @@ function RolesSection() {
                         key={idx}
                         className="rounded-xl overflow-hidden border shadow-md hover:shadow-lg transition"
                         style={{ borderColor: role.color }}
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
                     >
                         <div className="relative h-28 sm:h-32 md:h-36 w-full">
                             <Image
